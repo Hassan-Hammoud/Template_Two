@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: white;
-  --secondary-color: #19c8fa;
+  --secondary-color: hsl(193, 96%, 54%);
   --accent-color: rgb(15, 116, 143, 70%);
   --text-color: #333;
   --section-padding: 50px 0;
@@ -233,6 +233,9 @@ header nav .toogle-menu {
 
 /* Start Landing Page */
 .landing-page {
+   background-position: center;
+  background-repeat: no-repeat;
+
   background-image: url("https://i.ibb.co/WHXFrFT/pexels-erik-karits-10173090.jpg");
   background-size: cover;
   min-height: 100vh;
@@ -435,6 +438,93 @@ header nav .toogle-menu {
   color: #777;
 }
 
-
-
 /* End Services  */
+
+/* Start design  */
+.design {
+  padding: var(--section-padding);
+  background-image: url(https://i.ibb.co/87Y6Znq/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.design::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.design .design-img,
+.design-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.design .design-img {
+  width: 100%;
+  height: 500px;
+  top: 150px;
+  text-align: center;
+}
+
+.design img {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  position: relative;
+  
+}
+
+.design .design-content {
+  z-index: 1;
+  color: white;
+  position: relative;
+  padding: 50px;
+  background-color: var(--accent-color);
+}
+
+.design .design-content h2 {
+  font-weight: normal;
+}
+
+.design .design-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.design .design-content ul li {
+  padding: 15px 0;
+}
+
+.design .design-content ul li i {
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width: 992px) {
+
+  .design .design-img {
+    display: none;
+  }
+  
+  .design .design-content  {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+/* End design  */
