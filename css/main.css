@@ -350,35 +350,6 @@ header nav .toogle-menu {
   padding: var(--section-padding);
 }
 
-/* @media(min-width:767px) {
-
-  .services .service-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-column-gap: 50px;
-    grid-row-gap: 60px;
-
-  }
-}
-
- @media (max-width:1200px) { 
-   .services .service-content  .srv-box {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .services .service-content .srv-text{
-    margin: 0;
-  }
-
-  .services .srv-box i {
-    margin-bottom: 20px;
-  }
- } */
-
 @media (min-width: 992px) {
   .services .service-content {
     display: grid;
@@ -528,3 +499,101 @@ header nav .toogle-menu {
 }
 
 /* End design  */
+/* Start Portfolio */
+.portfolio {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.portfolio  ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+.portfolio ul li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.portfolio ul li.active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.imgs-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.imgs-section .box {
+position: relative;
+padding-bottom: 2px;
+overflow: hidden;
+}
+
+@media (min-width:767px) {
+  .imgs-section .box {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width:1200px) {
+  .imgs-section .box {
+    flex-basis: 25%;
+  }
+}
+
+
+
+.imgs-section .box img {
+  max-width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+
+.imgs-section .box .caption {
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 3;
+  bottom: -100px;
+}
+
+
+.imgs-section .box .caption h4 {
+  font-weight: normal;
+  /* margin-bottom: 10px; */
+  margin: 0px 0px 10px 0px ;  
+}
+
+.imgs-section .box .caption p {
+  color: var(--secondary-color);
+  margin: 0px;
+  
+}
+
+.imgs-section .box:hover .caption{
+  bottom: 0px;
+}
+.imgs-section .box:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+
+.more {
+  text-decoration: none;
+  color:var(--primary-color);
+  background: var(--secondary-color);
+  font-weight: normal;
+  font-size: 20px;
+  padding: 15px 20px ;
+  margin: 30px auto;
+}
+
+/* End Portfolio */
