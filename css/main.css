@@ -233,7 +233,7 @@ header nav .toogle-menu {
 
 /* Start Landing Page */
 .landing-page {
-   background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
 
   background-image: url("https://i.ibb.co/WHXFrFT/pexels-erik-karits-10173090.jpg");
@@ -454,7 +454,6 @@ header nav .toogle-menu {
   height: 100%;
   border-radius: 30px;
   position: relative;
-  
 }
 
 .design .design-content {
@@ -485,12 +484,11 @@ header nav .toogle-menu {
 }
 
 @media (max-width: 992px) {
-
   .design .design-img {
     display: none;
   }
-  
-  .design .design-content  {
+
+  .design .design-content {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -505,10 +503,9 @@ header nav .toogle-menu {
   position: relative;
 }
 
-.portfolio  ul {
+.portfolio ul {
   display: flex;
   justify-content: center;
-
 }
 
 .portfolio ul li {
@@ -528,31 +525,28 @@ header nav .toogle-menu {
 }
 
 .imgs-section .box {
-position: relative;
-padding-bottom: 2px;
-overflow: hidden;
+  position: relative;
+  padding-bottom: 2px;
+  overflow: hidden;
 }
 
-@media (min-width:767px) {
+@media (min-width: 767px) {
   .imgs-section .box {
     flex-basis: 50%;
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .imgs-section .box {
     flex-basis: 25%;
   }
 }
-
-
 
 .imgs-section .box img {
   max-width: 100%;
   height: 100%;
   transition: 0.3s;
 }
-
 
 .imgs-section .box .caption {
   font-size: 18px;
@@ -564,22 +558,19 @@ overflow: hidden;
   transition: 0.3s;
   z-index: 3;
   bottom: -100px;
+  font-weight: bold;
 }
 
-
 .imgs-section .box .caption h4 {
-  font-weight: normal;
-  /* margin-bottom: 10px; */
-  margin: 0px 0px 10px 0px ;  
+  margin: 0px 0px 10px 0px;
 }
 
 .imgs-section .box .caption p {
   color: var(--secondary-color);
   margin: 0px;
-  
 }
 
-.imgs-section .box:hover .caption{
+.imgs-section .box:hover .caption {
   bottom: 0px;
 }
 .imgs-section .box:hover img {
@@ -587,13 +578,63 @@ overflow: hidden;
 }
 
 .more {
+  display: block;
   text-decoration: none;
-  color:var(--primary-color);
+  color: var(--primary-color);
   background: var(--secondary-color);
   font-weight: normal;
-  font-size: 20px;
-  padding: 15px 20px ;
+  font-size: 18px;
+  padding: 15px 20px;
   margin: 30px auto;
+  width: fit-content;
 }
 
 /* End Portfolio */
+
+/* Start video section  */
+.video {
+  height: 90vh;
+  position: relative;
+}
+
+
+/* .video::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 125%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+} */
+
+.video-caption {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -0%);
+  text-align: center;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  padding: 30px;
+  z-index: 2;
+}
+
+.video-caption p {
+  font-size: 18px;
+}
+
+
+.video-caption button {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+/* End video section  */
