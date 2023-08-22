@@ -597,7 +597,6 @@ header nav .toogle-menu {
   position: relative;
 }
 
-
 /* .video::after {
   position: absolute;
   content: "";
@@ -627,7 +626,6 @@ header nav .toogle-menu {
   font-size: 18px;
 }
 
-
 .video-caption button {
   text-decoration: none;
   text-transform: uppercase;
@@ -645,17 +643,14 @@ header nav .toogle-menu {
   position: relative;
   text-align: center;
   overflow: hidden;
-
 }
 
-
 .about img {
-position: relative;
-bottom: -120px;
-margin-top: -120px;
-max-width: 100%;
-z-index: -1;
-
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 767px) {
@@ -664,10 +659,8 @@ z-index: -1;
     margin-right: 8px;
     bottom: -100px;
     margin-top: -100px;
-
   }
 }
-
 
 .wallpaper {
   background-image: url("https://i.ibb.co/pXNbXgx/wallpaper-2.jpg");
@@ -686,7 +679,6 @@ z-index: -1;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .about .wallpaper .container {
   position: relative;
@@ -726,13 +718,11 @@ z-index: -1;
   padding: 15px;
   border-radius: 50%;
   margin: 0 0 30px;
- 
- 
 }
 
-.wallpaper .box h1{
-font-size: 50px;
-margin: 0 0 25px;
+.wallpaper .box h1 {
+  font-size: 50px;
+  margin: 0 0 25px;
 }
 
 .wallpaper .box p {
@@ -740,3 +730,142 @@ margin: 0 0 25px;
   margin-bottom: 0;
 }
 /* End About US  */
+
+/* Start Skills && Testimonials */
+
+/* Start Testimonials  */
+
+.sk-op {
+  padding: var(--section-padding);
+}
+
+.sk-op .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .sk-op .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.sk-op .container .top {
+  text-align: center;
+}
+
+.sk-op .container > div > div > h2 {
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.sk-op .container > div > div > p {
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.opinion .avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.opinion .avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .opinion .avatar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .opinion .avatar img {
+    margin: 0 auto 20px;
+  }
+}
+
+.opinion .comment {
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+}
+
+.opinion .comment P {
+  text-align: right;
+  color: #777;
+}
+
+.opinion ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.opinion ul li {
+  /* width: 15px;
+  height: 15px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin: 0 5px; */
+}
+
+/* End Testimonials  */
+
+/* Start Skills  */
+.skill .skill-progress {
+  margin-bottom: 40px;
+}
+
+.skill .skill-progress h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.skill .skill-progress .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+
+.skill .skill-progress .prog span {
+  position: relative;
+  background-color: var(--secondary-color);
+  height: 100%;
+  display: block;
+}
+
+.skill .skill-progress .prog span::before {
+  position: absolute;
+  content: attr(data-progress);
+  right: -20px;
+  bottom: 40px;
+  background-color: black;
+  width: 40px;
+  text-align: center;
+  padding: 8px 2px;
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.skill .skill-progress .prog span::after {
+  position: absolute;
+  content: "";
+
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 10px;
+  border-color: black transparent transparent;
+  right: -9px;
+  bottom: 25px;
+}
+
+
+/* End Skills  */
+
+/* End Skills && Testimonials */
