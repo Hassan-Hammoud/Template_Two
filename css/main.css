@@ -865,7 +865,40 @@ header nav .toogle-menu {
   bottom: 25px;
 }
 
-
 /* End Skills  */
 
 /* End Skills && Testimonials */
+
+/* Start Quote  */
+.quote {
+  padding: 100px 0;
+  background-image: url(/assets/images/sea.jpg);
+  background-size: cover;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.quote::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  left: 0;
+  top: 0;
+}
+
+.quote .container {
+  position: relative;
+  z-index: 2;
+}
+
+.quote q {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* End Quote  */
