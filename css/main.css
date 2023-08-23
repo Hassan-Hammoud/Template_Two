@@ -597,6 +597,11 @@ header nav .toogle-menu {
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .video {
+    display: none;
+  }
+}
 /* .video::after {
   position: absolute;
   content: "";
@@ -639,10 +644,16 @@ header nav .toogle-menu {
 
 /* Start About US  */
 .about {
-  padding: 240px 0 50px;
+  padding: var(--section-padding);
   position: relative;
   text-align: center;
   overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 240px 0 50px;
+  }
 }
 
 .about img {
@@ -874,7 +885,7 @@ header nav .toogle-menu {
   padding: 100px 0;
   background-image: url(/assets/images/sea.jpg);
   background-size: cover;
-  margin: 40px 0;
+  margin: 50px 0;
   text-align: center;
   position: relative;
   color: var(--primary-color);
@@ -901,4 +912,126 @@ header nav .toogle-menu {
   display: block;
 }
 
+@media (max-width: 767px) {
+  .quote q {
+    font-size: 22px;
+  }
+}
+
 /* End Quote  */
+
+/* Start Pricing */
+.pricing {
+  /* padding: var(--section-padding); */
+}
+
+.pricing .pricing-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width:1200px) {
+  .pricing .pricing-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.pricing .pricing-content .box {
+  text-align: center;
+  background-color: hsla(330, 6%, 86%, 0.1);
+}
+
+.pricing .pricing-content .box .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.pricing .pricing-content h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.pricing .pricing-content span {
+  position: relative;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing .pricing-content span::before {
+  position: absolute;
+  content: "$";
+  right: 90px;
+  top: 0px;
+  font-size: 25px;
+}
+
+.pricing .pricing-content span::after {
+  position: absolute;
+  content: "/Mo";
+  left: 90px;
+  bottom: 0px;
+  font-size: 25px;
+}
+
+.pricing .pricing-content ul {
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0;
+}
+
+.pricing .pricing-content ul li {
+  padding: 20px 0;
+  position: relative;
+}
+
+.pricing .pricing-content ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing .box .foot {
+  margin: 40px  ;
+}
+.pricing .box .foot a {
+  display: block;
+  background-color: hsla(330, 6%, 86%, 0.1);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  font-size: 18px;  
+  width: fit-content;
+  text-decoration: none;
+  margin: 25px auto ;
+}
+
+.pricing .call {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.pricing .call p {
+font-size: 20px;
+/* margin-bottom: 30px; */
+}
+
+.pricing .call a {
+  display: block;
+  color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 20px 30px;
+    width: fit-content;
+    margin: 30px auto;
+}
+  
+
+
+/* End Pricing */
