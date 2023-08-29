@@ -931,7 +931,7 @@ header nav .toogle-menu {
   gap: 30px;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .pricing .pricing-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -998,7 +998,7 @@ header nav .toogle-menu {
 }
 
 .pricing .box .foot {
-  margin: 40px  ;
+  margin: 40px;
 }
 .pricing .box .foot a {
   display: block;
@@ -1006,10 +1006,10 @@ header nav .toogle-menu {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   padding: 20px;
-  font-size: 18px;  
+  font-size: 18px;
   width: fit-content;
   text-decoration: none;
-  margin: 25px auto ;
+  margin: 25px auto;
 }
 
 .pricing .call {
@@ -1018,20 +1018,124 @@ header nav .toogle-menu {
 }
 
 .pricing .call p {
-font-size: 20px;
-/* margin-bottom: 30px; */
+  font-size: 20px;
+  /* margin-bottom: 30px; */
 }
 
 .pricing .call a {
   display: block;
   color: var(--primary-color);
-    background-color: var(--secondary-color);
-    text-decoration: none;
-    padding: 20px 30px;
-    width: fit-content;
-    margin: 30px auto;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  padding: 20px 30px;
+  width: fit-content;
+  margin: 30px auto;
 }
-  
 
+/* Start Subscribe */
+
+/* End Subscribe */
+.subscribe {
+  padding: var(--section-padding);
+  background-image: url(/assets/images/planet-2.jpg);
+  background-size: cover;
+  color: var(--primary-color);
+  position: relative;
+  height: 40vh;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.subscribe .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .subscribe .container {
+    display: flex;
+    flex-direction: column;
+   
+  }
+}
+
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .subscribe .container form{
+    width: 350px;
+    max-width: 100%;
+  }
+}
+
+.subscribe form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+
+.subscribe form input[type="email"] {
+  border: 1px solid white;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--secondary-color);
+  width: calc(100% - 130px);
+  border-right: none;
+}
+
+.subscribe form ::placeholder {
+  color: var(--primary-color);
+
+}
+
+.subscribe form input[type="email"]:focus-visible, .subscribe form input[type="submit"]:focus {
+  outline: none;
+}
+
+.subscribe form input[type="submit"] {
+  width: 130px;
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-left: none;
+  text-transform: uppercase;
+}
+
+.subscribe .container p {
+  line-height: 1.8;
+  margin-left:  50px;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .subscribe .container p {
+    text-align: center;
+    margin-left: 0;
+    margin: 50px 0 0;
+  }
+}
 
 /* End Pricing */
