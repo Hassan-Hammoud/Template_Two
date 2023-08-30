@@ -413,7 +413,8 @@ header nav .toogle-menu {
 
 /* Start design  */
 .design {
-  padding: var(--section-padding);
+  padding-top: 50px;
+
   background-image: url(https://i.ibb.co/87Y6Znq/sky.jpg);
   background-size: cover;
   background-position: center;
@@ -592,16 +593,16 @@ header nav .toogle-menu {
 /* End Portfolio */
 
 /* Start video section  */
-.video {
+/* .video {
   height: 90vh;
   position: relative;
-}
+} */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .video {
     display: none;
   }
-}
+} */
 /* .video::after {
   position: absolute;
   content: "";
@@ -613,14 +614,14 @@ header nav .toogle-menu {
 
 } */
 
-.video-caption {
+/* .video-caption {
   position: absolute;
-  /* top: 50%; */
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -0%);
   text-align: center;
   width: 100%;
+  max-height: 100%;
   color: var(--primary-color);
   background-color: var(--accent-color);
   padding: 30px;
@@ -639,31 +640,32 @@ header nav .toogle-menu {
   background-color: #333;
   padding: 10px 20px;
   margin: 20px 0;
-}
+} */
 /* End video section  */
 
 /* Start About US  */
 .about {
-  padding: var(--section-padding);
+  padding-bottom: 50px;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-
+/* 
 @media (min-width: 1200px) {
   .about {
     padding: 240px 0 50px;
   }
-}
+} */
 
 .about img {
   position: relative;
-  bottom: -120px;
+  bottom:-120px;
   margin-top: -120px;
   max-width: 100%;
   z-index: -1;
+  margin-left: -22px;
 }
-
+/* 
 @media (max-width: 767px) {
   .about img {
     max-width: 80%;
@@ -671,7 +673,7 @@ header nav .toogle-menu {
     bottom: -100px;
     margin-top: -100px;
   }
-}
+} */
 
 .wallpaper {
   background-image: url("https://i.ibb.co/pXNbXgx/wallpaper-2.jpg");
@@ -922,7 +924,7 @@ header nav .toogle-menu {
 
 /* Start Pricing */
 .pricing {
-  /* padding: var(--section-padding); */
+  padding: var(--section-padding);
 }
 
 .pricing .pricing-content {
@@ -1141,7 +1143,7 @@ header nav .toogle-menu {
 
 /* Start Contact  */
 .contact {
-  /* padding: var(--section-padding); */
+  padding: var(--section-padding);
 }
 
 .contact .content-us {
@@ -1196,14 +1198,11 @@ header nav .toogle-menu {
   .contact .content-us .contact-info {
     order: -1;
     text-align: center;
-   
   }
 
   .contact .content-us .contact-info address {
     margin-bottom: 30px;
   }
-
- 
 }
 
 .contact .content-us .contact-info h3 {
@@ -1216,7 +1215,6 @@ header nav .toogle-menu {
   display: block;
   margin: 10px 0;
   font-size: 18px;
-
 }
 
 .contact .content-us .contact-info h3:nth-of-type(2) {
@@ -1231,7 +1229,78 @@ header nav .toogle-menu {
 
 .contact .content-us .contact-info address {
   color: #777;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 2;
 }
 /* End Contact  */
+
+/* Start Footer  */
+footer {
+  padding: var(--section-padding);
+  background-image: url(/assets/images/planet-2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+footer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+}
+
+footer .container {
+  color: var(--primary-color);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+footer .container img {
+  width: 150px;
+  height: 150px;
+}
+
+
+footer .social-links h2 {
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 40px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  footer .social-links h2 {
+    font-size: 22px;
+  }
+}
+
+footer .social-links i {
+  color: white;
+
+  font-size: 18px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+footer p .hssn-footer {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  footer p {
+    font-size: 18px;
+  }
+}
+/* End Footer  */
