@@ -1070,7 +1070,6 @@ header nav .toogle-menu {
   .subscribe .container {
     display: flex;
     flex-direction: column;
-   
   }
 }
 
@@ -1083,7 +1082,7 @@ header nav .toogle-menu {
 }
 
 @media (max-width: 767px) {
-  .subscribe .container form{
+  .subscribe .container form {
     width: 350px;
     max-width: 100%;
   }
@@ -1107,10 +1106,10 @@ header nav .toogle-menu {
 
 .subscribe form ::placeholder {
   color: var(--primary-color);
-
 }
 
-.subscribe form input[type="email"]:focus-visible, .subscribe form input[type="submit"]:focus {
+.subscribe form input[type="email"]:focus-visible,
+.subscribe form input[type="submit"]:focus {
   outline: none;
 }
 
@@ -1126,7 +1125,7 @@ header nav .toogle-menu {
 
 .subscribe .container p {
   line-height: 1.8;
-  margin-left:  50px;
+  margin-left: 50px;
   font-size: 18px;
 }
 
@@ -1139,3 +1138,100 @@ header nav .toogle-menu {
 }
 
 /* End Pricing */
+
+/* Start Contact  */
+.contact {
+  /* padding: var(--section-padding); */
+}
+
+.contact .content-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .contact .content-us {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact .container form {
+  flex-basis: 70%;
+  position: relative;
+}
+
+.contact .container form .main-input {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact .container form .main-input:focus-visible {
+  outline: none;
+}
+
+.contact .container form textarea.main-input {
+  height: 200px;
+}
+
+.contact .container form input[type="submit"] {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  text-transform: uppercase;
+  padding: 20px;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.contact .content-us .contact-info {
+  flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+  .contact .content-us .contact-info {
+    order: -1;
+    text-align: center;
+   
+  }
+
+  .contact .content-us .contact-info address {
+    margin-bottom: 30px;
+  }
+
+ 
+}
+
+.contact .content-us .contact-info h3 {
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.contact .content-us .contact-info .phone {
+  color: #777;
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+
+}
+
+.contact .content-us .contact-info h3:nth-of-type(2) {
+  margin-top: 90px;
+}
+
+@media (max-width: 767px) {
+  .contact .content-us .contact-info h3:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
+
+.contact .content-us .contact-info address {
+  color: #777;
+  font-size: 18px; 
+  line-height: 2;
+}
+/* End Contact  */
